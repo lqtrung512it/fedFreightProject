@@ -1,0 +1,37 @@
+:root {
+    --white-clr: #fff;
+    --black-clr: #000;
+    --text-clr: #333;
+    --background: #ebf4f4;
+    --header-navbar-height: 6.0rem;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6em;
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}

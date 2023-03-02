@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FedFreight</title>
+    <link rel="stylesheet" href="assests/fonts/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="assests/css/base.css">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="grid">
+                <div class="headerNavbar">
+                    <!-- Logo & Description -->
+                    <div class="headerLogoContainer">
+                        <img src="assests/img/logo.png" alt="" class="headerLogo">
+                        <div class="headerLogoDescription">FedFreight</div>
+                    </div>
+
+                    <!-- Header Navigation -->
+                    <div class="headerNavigationList">
+                        <div class="headerNavigationItem">
+                            <a href="#" class="headerNavigationItemLink">Home</a>
+                        </div>
+                        <div class="headerNavigationItem">
+                            <a href="#" class="headerNavigationItemLink">About Us</a>
+                        </div>
+                        <div class="headerNavigationItem">
+                            <a href="#" class="headerNavigationItemLink">Service</a>
+                        </div>
+                        <div class="headerNavigationItem">
+                            <a href="#" class="headerNavigationItemLink">Contact Us</a>
+                        </div>
+                        <div class="headerNavigationItem">
+                            <a href="#" class="headerNavigationItemLink loginButton">Login</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider -->
+                <div class="headerSlider">
+                    <div class="headerSliderTitle">Freight Forwarding Software</div>
+                    <div class="headerSliderMission">A World Within Your Package</div>
+                    <div class="headerSliderRate">
+                        <div class="headerSliderStars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="headerSliderVotes">2,100+ Reviews</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JS for scroll to change header navigation's color -->
+            <script>
+                var myNavbar = document.querySelector('.headerNavbar');
+                window.onscroll = function () {
+                    if (window.scrollY > 10) {
+                        myNavbar.classList.remove("HeaderNavbarTransparent");
+                        myNavbar.classList.add("HeaderNavbarColor");
+                    }
+                    else {
+                        myNavbar.classList.remove("HeaderNavbarColor");
+                        myNavbar.classList.add("HeaderNavbarTransparent");
+                    }
+                };
+            </script>
+        </header>
+
+        <!-- Container -->
+        <div class="container">
+            <div class="grid">
+                <div class="firstContent">
+                    <div class="firstContentHeadingText">Find Out What We Are Capable Of</div>
+                    <!-- SLider start -->
+                    <div class="firstContentSlider">
+                        <div class="firstContentSlides">
+                            <!-- Radio button -->
+                            <input type="radio" name="sliderRadioBtn" id="radio1" checked>
+                            <input type="radio" name="sliderRadioBtn" id="radio2">
+
+                            <!-- First Content Slider Div -->
+                            <div class="firstSliderDiv">
+                                <div class="sliderDiv" style="background-color: #c8ebf0;">
+                                    <img src="assests/img/importIcon.png" alt="" class="sliderDivImage">
+                                    <div class="sliderDivHeading">Import</div>
+                                    <div class="sliderDivText">Easily manage shipment reports, bill of ladings,
+                                        container ETA/ATA/LFD,
+                                        and invoices on one page, ensuring full visibility from shipment into inventory.
+                                    </div>
+                                </div>
+                                <div class="sliderDiv" style="background-color: #90c6e4;">
+                                    <img src="assests/img/exportLogoIcon.png" alt="" class="sliderDivImage">
+                                    <div class="sliderDivHeading">Export</div>
+                                    <div class="sliderDivText">From purchase orders and quotes to shipments, invoices,
+                                        GoFreight is
+                                        designed to optimize productivity so you can focus on your core cross-border
+                                        shipping business.</div>
+                                </div>
+                                <div class="sliderDiv" style="background-color: #f8e1a6;">
+                                    <img src="assests/img/securityIcon.png" alt="" class="sliderDivImage">
+                                    <div class="sliderDivHeading">Security Filling</div>
+                                    <div class="sliderDivText">File custom documents directly in the GoFreight platform
+                                        with the
+                                        in-app ISF, AMS, and eManifest portals, saving you more time and money.</div>
+                                </div>
+                                <div class="sliderDiv" style="background-color: #efb9b9;">
+                                    <img src="assests/img/trackingLogo.png" alt="" class="sliderDivImage">
+                                    <div class="sliderDivHeading">Tracking</div>
+                                    <div class="sliderDivText">With native integration with ocean carriers, terminals
+                                        and rails EDI,
+                                        all the container statuses will be auto-updated in your shipments.</div>
+                                </div>
+                            </div>
+                            <div class="secondSliderDiv">
+                                <div class="sliderDiv" style="background-color: #c1eac0;">
+                                    <img src="assests/img/centralizationLogo.png" alt="" class="sliderDivImage">
+                                    <div class="sliderDivHeading">Centralization</div>
+                                    <div class="sliderDivText">With GoFreight Customer Portal, your customers can log in
+                                        and see all their shipments in one place, along with the relevant instructions
+                                        and documents.</div>
+                                </div>
+                                <div class="sliderDiv" style="background-color: #edc6f3;">
+                                    <img src="assests/img/visibilityLogo.png" alt="" class="sliderDivImage">
+                                    <div class="sliderDivHeading">Automation</div>
+                                    <div class="sliderDivText">Logistics tasks are automated in GoFreight Customer
+                                        Portal, including shipment status updates, alerts, and regular reports.</div>
+                                </div>
+                                <div class="sliderDiv" style="background-color: #c6cdf3;">
+                                    <img src="assests/img/trackingLogo.png" alt="" class="sliderDivImage">
+                                    <div class="sliderDivHeading">Visibility</div>
+                                    <div class="sliderDivText">With GoFreight’s Tracking technology, customers’ cargo
+                                        status will be updated in real-time, helping them manage their inventories even
+                                        in transit.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="sliderRadioNavigation">
+                        <label for="radio1" class="radioManualButton"></label>
+                        <label for="radio2" class="radioManualButton"></label>
+                    </div>
+
+                    <div >
+                        <a href="#" class=" firstContentButton">Learn More &#10140;</a>
+                    </div>
+                </div>
+                <div class="secondContent"></div>
+                <div class="thirdContent"></div>
+            </div>
+        </div>
+
+        <footer class="footer"></footer>
+    </div>
+</body>
+
+</html>

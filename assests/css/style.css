@@ -1,0 +1,273 @@
+body {
+    background-color: var(--background);
+}
+
+/* Header */
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assests/img/headerBackground.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Navbar */
+.headerNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-navbar-height);
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-clr);
+    padding: 0 0.8rem;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.headerNavbar div {
+    display: inline-block;
+}
+
+/* Logo */
+.headerLogoContainer {
+    margin-left: 7.2rem;
+}
+
+.headerLogo {
+    width: 4.0rem;
+    height: 4.0rem;
+    margin: calc((var(--header-navbar-height) - 4.0rem) / 2)
+}
+
+.headerLogoDescription {
+    font-size: 2.4rem;
+    line-height: 4.0rem;
+    font-weight: bold;
+    color: inherit;
+    transform: translateY(-50%);
+    padding-left: 0.4rem;
+}
+
+/* Navigation */
+.headerNavigationList {
+    margin-right: 4.8rem;
+}
+
+.headerNavigationItem {
+    margin: calc((var(--header-navbar-height) - 2.0rem) / 3) 2.0rem calc((var(--header-navbar-height) - 2.0rem) / 4);
+    
+}
+
+.headerNavigationItem, 
+.headerNavigationItemLink {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2.0rem;
+    align-items: center;
+    font-weight: 450;
+    color: inherit;
+    transition: 0.1s;
+}
+
+.headerNavigationItemLink:hover {
+    transform: translateY(-20%);
+    font-weight: 600;
+}
+
+.loginButton {
+    padding: 0.8rem 1.6rem;
+    font-size: 2.0rem;
+    color: #97b9e5;
+    border: 0.2rem solid #97b9e5;
+    border-radius: 0.8rem;
+}
+
+.HeaderNavbarTransparent { 
+    background-color:rgba(255,255,255,0.0);
+}
+
+.HeaderNavbarColor { 
+    background-color: var(--white-clr);
+    color: var(--text-clr);
+    box-shadow: 5px -1px 12px -5px grey;
+}
+
+/* Slider */
+.headerSlider {
+    position: absolute;
+    width: 48rem;
+    top: calc(var(--header-navbar-height) * 2);
+    left: calc(var(--header-navbar-height) * 2);
+    z-index: 1;
+}
+
+.headerSliderTitle,
+.headerSliderMission,
+.headerSliderRate {
+    margin-bottom: 3.2rem;
+    color: var(--white-clr);
+    text-shadow: 0.2rem 0.2rem #333;
+}
+
+.headerSliderTitle {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.headerSliderMission {
+    font-size: 5.2rem;
+    line-height: 5.2rem;
+    font-weight: bolder;
+}
+
+.headerSliderRate {
+    font-size: 2.0rem;
+    font-weight: 500;
+    display: flex;
+}
+
+.fa-star {
+    color: #e9c718;
+}
+
+.headerSliderVotes {
+    padding-left: 2.4rem;
+}
+
+/* Container */
+.container {
+    
+}
+
+/* First Content */
+.firstContent {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Heading of first content */
+.firstContentHeadingText {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    font-weight: bolder;
+    margin-top: 2.0rem;
+    margin-bottom: 4.8rem;
+}
+
+/* Slider of first content */
+.firstContentSlider {
+    width: 1200px;
+    height: 30rem;
+    display: inline-flex;
+}
+
+.firstContentSlides {
+    display: flex;
+    
+}
+
+.firstContentSlides input {
+    display: none;
+}
+
+.firstSliderDiv,
+.secondSliderDiv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sliderDiv {
+    width: 20%;
+    transition: 1s;
+    border: 0.1rem solid gray;
+    border-radius: 2.0rem;
+    text-align: left;
+    padding: 2.8rem;
+    box-shadow: 0.3rem 0.3rem gray;
+}
+
+.sliderDiv img {
+    height: 4.8rem;
+    width: 4.8rem;
+    margin-bottom: 2.0rem;
+}
+
+.sliderDiv .sliderDivHeading {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+}
+
+.sliderDiv .sliderDivText {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--text-clr);
+}
+
+.sliderDiv:not(:last-child) {
+    margin-right: 3%;
+}
+
+.sliderRadioNavigation{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.radioManualButton {
+    border: 0.2rem solid #a5afaf;
+    padding: 0.8rem;
+    border-radius: 1.0rem;
+    cursor: pointer;
+    transition: 1s;
+    margin: 3.2rem 1.2rem;
+}
+
+.radioManualButton:hover {
+    background-color: #a5afaf ;
+}
+
+.radioManualButton:checked {
+    background-color: #a5afaf ;
+}
+
+#radio1:checked ~ .firstSliderDiv {
+    display: flex;
+}
+
+#radio1:checked ~ .secondSliderDiv {
+    display: none;
+}
+
+#radio2:checked ~ .firstSliderDiv {
+    display: none;
+}
+
+#radio2:checked ~ .secondSliderDiv {
+    display: flex;
+}
+
+/* Button */
+.firstContentButton {
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+    font-weight: bold;
+    color: #385376;
+    border: 0.3rem solid #385376;
+    border-radius: 0.8rem;
+    transition: 0.5s;
+}
+
+.firstContentButton:hover {
+    background-color: #4488e1;
+    color: var(--white-clr);
+}
