@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FredFreight - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="assests/css/base.css">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="headerLogin">
+            <div class="grid">
+                <div class="headerNavbar">
+                    <!-- Logo & Description -->
+                    <div class="headerLogoContainer">
+                        <img src="assests/img/logo.png" alt="" class="headerLogo">
+                        <div class="headerLogoDescription">FredFreight</div>
+                    </div>
+                    <!-- End Logo & Description -->
+
+                    <!-- Header Navigation -->
+                    <div class="headerNavigationList">
+                        <div class="headerNavigationItem">
+                            <a href="index.html " class="headerNavigationItemLink">Trang Chủ</a>
+                        </div>
+                        <div class="headerNavigationItem">
+                            <a href="#" class="headerNavigationItemLink">Thông Tin</a>
+                        </div>
+                        <div class="headerNavigationItem">
+                            <a href="#" class="headerNavigationItemLink">Dịch Vụ</a>
+                        </div>
+                        <div class="headerNavigationItem">
+                            <a href="#" class="headerNavigationItemLink">Liên Lạc</a>
+                        </div>
+                        <div class="headerNavigationItem">
+                            <a href="register.html" class="headerNavigationItemLink loginButton">Đăng Ký</a>
+                        </div>
+                    </div>
+                    <!-- End Header Navigation -->
+                </div>
+            </div>
+
+            <!-- Modal Layout -->
+            <div class="modal">
+                <div class="modalBody">
+                    <div class="modalInner">
+                        <h2>Đăng nhập</h2>
+                        <form action="#">
+                            <div class="inputBox">
+                                <img src="/assests/img/emailIcon.png" alt="" class="modalIcon">
+                                <input type="email" required>
+                                <label for="">Email</label>
+                            </div>
+                            <div class="inputBox">
+                                <img src="/assests/img/passwordIcon.png" alt="" class="modalIcon">
+                                <input type="password" required>
+                                <label for="">Mật Khẩu</label>
+                            </div>
+                            <div class="rememberForget">
+                                <label for="">
+                                    <input type="checkbox">Ghi nhớ thông tin
+                                </label>
+                                <a href="#">Quên mật khẩu?</a>
+                            </div>
+                            <button>Đăng nhập</button>
+                            <p class="redirectRegister">Bạn chưa có tài khoản? 
+                                <a href="register.html">Đăng ký</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modalOverlay"></div>
+
+            </div>
+        </header>
+        <!-- End Header -->
+
+
+    </div>
+
+
+
+</body>
+
+</html>
