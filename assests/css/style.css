@@ -7,9 +7,9 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(/assests/img/headerBackground.png);
+    background-image: url(/assests/img/headerBackground.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 /* Navbar */
@@ -78,10 +78,13 @@ body {
 }
 
 .loginButton {
+    width: 16rem;
     padding: 0.8rem 1.6rem;
+    text-align: center;
     font-size: 2.0rem;
-    color: #97b9e5;
-    border: 0.2rem solid #97b9e5;
+    color: var(--white-clr);
+    border: 0.2rem solid #9c876e;
+    background-color: #9c876e;
     border-radius: 0.8rem;
 }
 
@@ -98,9 +101,9 @@ body {
 /* Slider */
 .headerSlider {
     position: absolute;
-    width: 48rem;
-    top: calc(var(--header-navbar-height) * 2);
-    left: calc(var(--header-navbar-height) * 2);
+    width: 52rem;
+    top: calc(var(--header-navbar-height) * 3);
+    left: calc(var(--header-navbar-height) * 3);
     z-index: 1;
 }
 
@@ -114,28 +117,40 @@ body {
 
 .headerSliderTitle {
     font-size: 2.4rem;
+    line-height: 2.4rem;
     font-weight: 600;
 }
 
 .headerSliderMission {
-    font-size: 5.2rem;
-    line-height: 5.2rem;
+    font-size: 6.0rem;
+    line-height: 6.0rem;
     font-weight: bolder;
 }
 
 .headerSliderRate {
-    font-size: 2.0rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
     font-weight: 500;
     display: flex;
 }
 
-.fa-star {
-    color: #e9c718;
+.headerSliderStars {
+    display: flex;
+}
+
+.star{
+    height: 2.8rem;
+    width: 2.8rem;
+    margin: 0 0.4rem;
 }
 
 .headerSliderVotes {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
     padding-left: 2.4rem;
 }
+/* End Heading */
+
 
 /* Container */
 .container {
@@ -143,9 +158,11 @@ body {
 }
 
 /* First Content */
-.firstContent {
+.firstContent,
+.secondContent,
+.thirdContent {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - var(--header-navbar-height));
     text-align: center;
 }
 
@@ -154,7 +171,7 @@ body {
     font-size: 4.8rem;
     line-height: 4.8rem;
     font-weight: bolder;
-    margin-top: 2.0rem;
+    padding-top: 4.0rem;
     margin-bottom: 4.8rem;
 }
 
@@ -227,7 +244,7 @@ body {
     border-radius: 1.0rem;
     cursor: pointer;
     transition: 1s;
-    margin: 3.2rem 1.2rem;
+    margin: 4.0rem 1.2rem;
 }
 
 .radioManualButton:hover {
@@ -271,3 +288,368 @@ body {
     background-color: #4488e1;
     color: var(--white-clr);
 }
+/* End Content 1 */
+
+
+
+/* Second Content */
+.secondContent {
+    background-color: #223a59;
+    color: var(--white-clr);
+    
+}
+
+.secondContentRow {
+    padding: 6.0rem 2.0rem 1.0rem ;
+}
+
+.secondContentHeadingText {
+    width: 64rem;
+    height: 6.4rem;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin: auto;
+    margin-bottom: 2.0rem;
+} 
+
+.secondConentText {
+    width: 23.8rem;
+    height: 4.8rem;
+    font-size: 1.6rem;
+    font-size: 1.6rem;
+    margin: auto;
+    margin-bottom: 4.0rem;
+}
+
+.secondContentDetailInfo {
+    display: flex;
+}
+
+.secondContentDetailInfo .secondContentHeadingText {
+    width: 58rem;
+    height: 3.2rem;
+    
+}
+
+.secondContentDetailInfo .slice {
+    width: 0.2rem;
+    height: 25rem;
+    border: 0.1rem solid var(--white-clr);
+}
+
+/* End Content 2 */
+
+
+/* Third Content */
+.thirdContent {
+    display: flex;
+}
+
+.thirdContentColumn {
+    width: 50%;
+}
+
+.thirdContentHedingText {
+    width: 44rem;
+    height: 10.8rem;
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    font-weight: bolder;
+    margin: 8.0rem auto 4.0rem;
+    padding: 4.0rem auto;
+    
+}
+
+.thirdContentForm {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.thirdContentForm h2 {
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+    margin-top: 12.0rem;
+}
+
+.thirdContent input,
+.thirdContent button {
+    width: 80%;
+    margin: 0.8rem auto 1.2rem;
+    height: 2.8rem;
+}
+
+.thirdContent input {
+    font-size: 2.0rem;
+    color: #cad2d2;
+    border-radius: 0.4rem;
+    border: 0.1rem solid gray;
+}
+
+.thirdContent button {
+    font-size: 2.0rem;
+    font-weight: 550;
+    color: var(--white-clr);
+    background-color: #223A59;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.thirdContentColumn img { 
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    margin-top: 6.4rem;
+    border: none;
+    border-radius: 1.0rem;
+}
+
+/* End Content 3 */
+
+
+/* Footer */
+.footer {
+    height: calc(100vh - var(--header-navbar-height));
+    background-color: #343A40;
+    color: var(--white-clr);
+    display: flex;
+    margin: auto;
+}
+
+.footerContentColumn {
+    width: 500px;
+    margin: auto;
+    padding-left: 4.8rem;
+}
+
+.footerLogoAndDescription,
+.footerContact {
+    display: flex;
+    line-height: 4.8rem;
+    margin-bottom: 2.4rem;
+}
+
+.footerLogo {
+    padding-right: 2.0rem;
+}
+
+.footerLogo img {
+    width: 4.4rem;
+    height: 4.4rem;   
+}
+
+.footerDescription,
+.contactHeading {
+    font-size: 2.4rem;
+    font-weight: bold; 
+}
+
+.footerContact {
+    line-height: 2.4rem;
+}
+
+.contactPhone {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+}
+
+.footerHeadingText {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.footerText {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.footerForm {
+    display: flex;
+}
+
+.footerForm input {
+    font-size: 2.0rem;
+    width: 36rem;
+    height: 3.2rem;
+    margin-right: 1.6rem;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.footerForm button {
+    width: 12rem;
+    height: 3.2rem;
+    font-size: 2.0rem;
+    color: #A4C7F4;
+    border-radius: 0.8rem;
+    border: 0.1rem solid #A4C7F4;
+    background-color: transparent;
+}
+
+.footerSocialMedia {
+    display: flex;
+    margin-top: 4.0rem;
+}
+
+.footerMediaLogo {
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-right: 2.4rem;
+}
+
+.footerSlogan {
+    font-size: 8.0rem;
+    line-height: 8.4rem;
+    font-weight: bold;
+    padding-bottom: 4.0rem;
+}
+/* End Footer */
+
+
+/* Login Page */
+.headerLogin {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assests/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal, .modalOverlay, .modalBody {
+    position: absolute;
+    z-index: 1;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modalBody {
+    width: 400px;
+    height: 500px;
+    background-color: transparent;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalInner  {
+    color: var(--white-clr);  
+}
+
+
+h2 {
+    font-size: 4.0rem;
+    text-align: center;
+    padding-bottom: 4.0rem;
+}
+
+.inputBox {
+    position: relative;
+    width: 250px;
+    margin: 3rem auto;   
+    border-bottom: 2px solid var(--white-clr);
+    
+}
+
+.modalIcon {
+    width: 2rem;
+    height: 2rem;
+    filter: brightness(75%);
+}
+
+.inputBox label {
+    position: absolute;
+    font-size: 1.6rem;
+    top: 40%;
+    left: 5px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:focus ~ :valid {
+    top: -1.6rem;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 4.0rem;
+    font-size: 1.6rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 3.5rem 0 0.5rem;
+}
+
+.inputBox img {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.8rem;
+}
+
+.rememberForget,
+.agreeTermCondition {
+    width: 300px;
+    margin: 1.5rem 0 1.5rem;
+    font-size: 1.2rem;
+    color: var(--white-clr);
+    display: flex;
+    justify-content: space-around;
+}
+
+.rememberForget input,
+.agreeTermCondition input {
+    margin: 0 0.4rem;
+    
+}
+
+.rememberForget a,
+.redirectRegister a,
+.redirectLogin a  {
+    color: var(--white-clr);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.rememberForget a:hover,
+.redirectRegister a:hover,
+.redirectLogin a:hover {
+    text-decoration: underline;
+}
+
+.modalInner button {
+    width: 100%;
+    height: 4rem;
+    border-radius: 4rem;
+    background-color: var(--black-clr);
+    color: var(--white-clr);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.redirectRegister,
+.redirectLogin  {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 1.6rem;
+    color: #CECECE;
+}   
+
