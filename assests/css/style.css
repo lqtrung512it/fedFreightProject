@@ -169,9 +169,15 @@ body {
 /* Heading of first content */
 .firstContentHeadingText {
     font-size: 4.8rem;
-    line-height: 4.8rem;
+    line-height: 5.2rem;
     font-weight: bolder;
+}
+
+.firstContentHeadingText:first-child{
     padding-top: 4.0rem;
+}
+
+.firstContentHeadingText:nth-child(2) {
     margin-bottom: 4.8rem;
 }
 
@@ -200,7 +206,8 @@ body {
 }
 
 .sliderDiv {
-    width: 20%;
+    position: relative;
+    width: 30%;
     transition: 1s;
     border: 0.1rem solid gray;
     border-radius: 2.0rem;
@@ -209,22 +216,30 @@ body {
     box-shadow: 0.3rem 0.3rem gray;
 }
 
-.sliderDiv img {
-    height: 4.8rem;
-    width: 4.8rem;
-    margin-bottom: 2.0rem;
+.sliderDiv .sliderDivHeading {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 2.4rem;
 }
 
-.sliderDiv .sliderDivHeading {
-    font-size: 2.0rem;
-    font-weight: bold;
-    margin-bottom: 1.6rem;
-}
 
 .sliderDiv .sliderDivText {
     font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
     font-weight: 400;
     color: var(--text-clr);
+}
+
+.sliderDiv img {
+    position: absolute;
+    height: 4.8rem;
+    width: 4.8rem;
+    bottom: 2.4rem;
 }
 
 .sliderDiv:not(:last-child) {
@@ -296,44 +311,57 @@ body {
 .secondContent {
     background-color: #223a59;
     color: var(--white-clr);
-    
+    height: calc(120vh - var(--header-navbar-height));
 }
 
 .secondContentRow {
-    padding: 6.0rem 2.0rem 1.0rem ;
+    padding: 3.0rem 2.0rem 1.0rem ;
 }
 
 .secondContentHeadingText {
     width: 64rem;
     height: 6.4rem;
-    font-size: 3.2rem;
-    line-height: 3.2rem;
+    color: #FCFF58;
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 3.8rem;
     margin: auto;
-    margin-bottom: 2.0rem;
 } 
 
-.secondConentText {
-    width: 23.8rem;
-    height: 4.8rem;
-    font-size: 1.6rem;
-    font-size: 1.6rem;
-    margin: auto;
-    margin-bottom: 4.0rem;
-}
-
 .secondContentDetailInfo {
+    margin: auto;
+    width: 80%;
     display: flex;
+    justify-content: space-between;
 }
 
-.secondContentDetailInfo .secondContentHeadingText {
-    width: 58rem;
-    height: 3.2rem;
-    
+.detailInforRow {
+    display: flex;
+    height: 12.0rem;
+    align-items: center;
+}
+
+.secondContentImg {
+    width: 10.0rem;
+    height: 8.8rem;
+    border-radius: 2.0rem;
+    border: none;
+}   
+
+.secondContentText{
+    height: 6.0rem;
+    width: 28rem;
+    font-size: 1.8rem;
+    line-height: 2.0rem;
+    text-align: center;
+    margin-left: 2.0rem;
+    margin-right: 2.0rem;
+
 }
 
 .secondContentDetailInfo .slice {
     width: 0.2rem;
-    height: 25rem;
+    height: 60rem;
     border: 0.1rem solid var(--white-clr);
 }
 
@@ -351,58 +379,58 @@ body {
 
 .thirdContentHedingText {
     width: 44rem;
-    height: 10.8rem;
-    font-size: 3.6rem;
-    line-height: 3.6rem;
+    height: 6.4rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
     font-weight: bolder;
-    margin: 8.0rem auto 4.0rem;
-    padding: 4.0rem auto;
+    margin: 6.0rem auto 4.0rem;
     
 }
 
-.thirdContentForm {
-    width: 80%;
-    margin: auto;
+.feedbackContainer {
     display: flex;
-    flex-direction: column;
+    padding-left: 4.0rem;
+    margin-bottom: 3.0rem;
 }
 
-.thirdContentForm h2 {
-    font-size: 2.0rem;
+.customerAvt {
+    height: 6.0rem;
+    width: 6.0rem;
+    border-radius: 6.0rem;
+    margin-right: 1.6rem;
+}
+
+.customerRate {
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+.customerName {
+    font-size: 1.8rem;
     line-height: 2.0rem;
-    margin-top: 12.0rem;
+    font-size: 600;
+    margin-right: 2.0rem;
 }
 
-.thirdContent input,
-.thirdContent button {
-    width: 80%;
-    margin: 0.8rem auto 1.2rem;
-    height: 2.8rem;
+.customerRateStar {
+    height: 1.6rem;
+    width: 1.6rem;
+    line-height: 2.0rem;
+    margin: 0 0.2rem;
 }
 
-.thirdContent input {
-    font-size: 1.6rem;
-    height: 3.2rem;
-    color: #cad2d2;
-    border-radius: 0.8rem;
-    border: 0.1rem solid gray;
-    padding: 0.8rem;
+.customerComment {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: left;
 }
 
-.thirdContent button {
-    font-size: 2.0rem;
-    font-weight: 550;
-    color: var(--white-clr);
-    background-color: #223A59;
-    border: none;
-    border-radius: 0.8rem;
-}
 
-.thirdContentColumn img { 
-    height: 80%;
-    width: 80%;
+.thirdContentContributor { 
+    height: 50%;
+    width: 90%;
     margin: auto;
-    margin-top: 6.4rem;
+    margin-top: 16.0rem;
     border: none;
     border-radius: 1.0rem;
 }
