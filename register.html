@@ -53,28 +53,38 @@
             <div class="modalBody">
                 <div class="modalInner">
                     <h2>Đăng ký</h2>
-                    <form action="#">
+                    <form action="">
                         <div class="inputBox">
                             <img src="/assests/img/userIcon.png" alt="" class="modalIcon">
-                            <input type="text" required>
-                            <label for="">Tên đăng nhập</label>
+                            <input type="text" id="username" name="username" required>
+                            <label for="username">Tên đăng nhập</label>
                         </div>
                         <div class="inputBox">
                             <img src="/assests/img/emailIcon.png" alt="" class="modalIcon">
-                            <input type="email" required>
-                            <label for="">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" >Email</label>
                         </div>
                         <div class="inputBox">
                             <img src="/assests/img/passwordIcon.png" alt="" class="modalIcon">
-                            <input type="password" required>
-                            <label for="">Mật Khẩu</label>
+                            <input type="password" id="password" name="password" required>
+                            <label for="password" >Mật Khẩu</label>
                         </div>
-                        <div class="agreeTermCondition">
-                            <label for="">
-                                <input type="checkbox">Tôi đồng ý với các điều khoản này
-                            </label>
+                        <div class="roleSelection">
+                            <label for="role">Bạn sẽ trở thành?</label>
+                            <div>
+                                <input type="radio" name="role" value="customer" id="customer" checked>
+                                <label for="customer">Khách hàng</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="role" value="contributor" id="contributor">
+                                <label for="contributor">Nhà Phân Phối</label>
+                            </div>
+
                         </div>
-                        <button>Đăng ký</button>
+
+                        <input type="submit" id="validate" name="validate" value="Đăng ký" class="inputButton">
+
+
                         <p class="redirectLogin">Bạn đã có tài khoản?
                             <a href="login.html">Đăng nhập</a>
                         </p>
@@ -87,7 +97,7 @@
         </div>
 
         <!-- End Modal -->
-
+        <script src="validate.js"> </script>
 
     </div>
 

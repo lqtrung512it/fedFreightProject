@@ -52,24 +52,25 @@
             <div class="modalBody">
                 <div class="modalInner">
                     <h2>Đăng nhập</h2>
-                    <form action="#">
+                    <form action="#" >
                         <div class="inputBox">
                             <img src="/assests/img/emailIcon.png" alt="" class="modalIcon">
-                            <input type="email" required>
-                            <label for="">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" >Email</label>
                         </div>
                         <div class="inputBox">
                             <img src="/assests/img/passwordIcon.png" alt="" class="modalIcon">
-                            <input type="password" required>
-                            <label for="">Mật Khẩu</label>
+                            <input type="password" id="password" name="password" required>
+                            <label for="password" >Mật Khẩu</label>
                         </div>
+                        
                         <div class="rememberForget">
                             <label for="">
                                 <input type="checkbox">Ghi nhớ thông tin
                             </label>
                             <a href="#">Quên mật khẩu?</a>
                         </div>
-                        <button>Đăng nhập</button>
+                        <input type="submit" id="validate" name="validate" value="Đăng nhập" class="inputButton">
                         <p class="redirectRegister">Bạn chưa có tài khoản?
                             <a href="register.html">Đăng ký</a>
                         </p>
@@ -81,6 +82,7 @@
 
         </div>
 
+        <script src="validate.js"></script>
         <!-- End Layout -->
 
 
